@@ -3,35 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ריפוי מתוך כאב — עידו קסלסי | הספר</title>
-<meta name="description" content="ריפוי מתוך כאב — ספרו הראשון של עידו קסלסי. סיפור אישי על התמודדות, שיקום ותקווה. להזמנה עכשיו.">
-<!-- Open Graph -->
-<meta property="og:title" content="ריפוי מתוך כאב — עידו קסלסי">
-<meta property="og:description" content="ספר על מסע חיים, כאב שהפך לתקווה. להזמנה עכשיו.">
+<title>ריפוי מתוך כאב — עידו משה קסלסי | הספר</title>
+<meta name="description" content="ריפוי מתוך כאב — ספרו הראשון של עידו משה קסלסי. סיפורו האמיתי של נער בן 17 על כאב, געגוע ותקווה. להזמנה עכשיו.">
+<meta property="og:title" content="ריפוי מתוך כאב — עידו משה קסלסי">
+<meta property="og:description" content="סיפורו האמיתי של נער בן 17 על כאב, געגוע ותקווה. להזמנה עכשיו.">
 <meta property="og:type" content="book">
+<meta property="og:image" content="cover.jpg">
 <meta property="og:locale" content="he_IL">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@500;700;900&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#2a2320;         /* חום כהה עמוק */
-    --sand:#f5efe6;        /* חול בהיר */
-    --cream:#fbf8f3;
-    --gold:#c9a15a;        /* זהב חמים */
-    --gold-dark:#a9823f;
-    --rust:#8f4b34;        /* חמרה/כאב */
-    --sky:#6b8a94;         /* תכלת מרגיע/תקווה */
+    --ink:#1f3a4d;          /* כחול לילה עמוק (מהכריכה) */
+    --sky:#3f6d8c;          /* כחול שמיים */
+    --sky-light:#dced f4;
+    --sky-soft:#eaf3f8;
+    --cream:#fbf7ec;        /* קרם מהכריכה */
+    --sand:#f3ebda;
+    --sun:#f2c14e;          /* צהוב שמש */
+    --sun-deep:#e0a92e;
     --wa:#25D366;
-    --shadow:0 20px 60px rgba(42,35,32,.12);
+    --shadow:0 22px 60px rgba(31,58,77,.16);
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{
-    font-family:'Assistant',system-ui,sans-serif;
-    color:var(--ink);background:var(--cream);
-    line-height:1.75;overflow-x:hidden;
-  }
+  body{font-family:'Assistant',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.75;overflow-x:hidden}
   h1,h2,h3,.serif{font-family:'Frank Ruhl Libre',Georgia,serif}
   .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
   .btn{
@@ -43,137 +40,95 @@
   }
   .btn:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(37,211,102,.45)}
   .btn svg{width:24px;height:24px;fill:#fff}
-  .btn-outline{
-    background:transparent;color:var(--ink);border:2px solid var(--gold);
-    box-shadow:none;font-size:1rem;padding:12px 26px;
-  }
-  .btn-outline:hover{background:var(--gold);color:#fff}
+  .btn-outline{background:transparent;color:var(--ink);border:2px solid var(--sky);box-shadow:none;font-size:1rem;padding:12px 26px}
+  .btn-outline:hover{background:var(--sky);color:#fff}
 
   /* ===== HERO ===== */
   .hero{
-    position:relative;min-height:92vh;display:flex;align-items:center;
+    position:relative;min-height:94vh;display:flex;align-items:center;
     background:
-      radial-gradient(1200px 600px at 80% -10%, rgba(201,161,90,.18), transparent 60%),
-      radial-gradient(900px 500px at -10% 110%, rgba(107,138,148,.20), transparent 60%),
-      linear-gradient(180deg,var(--sand),var(--cream));
+      radial-gradient(900px 500px at 78% 8%, rgba(242,193,78,.28), transparent 55%),
+      radial-gradient(1000px 600px at 10% 100%, rgba(63,109,140,.18), transparent 60%),
+      linear-gradient(180deg,var(--sky-soft),var(--cream));
     overflow:hidden;
   }
-  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;width:100%}
-  .eyebrow{
-    display:inline-block;letter-spacing:3px;font-size:.85rem;font-weight:700;
-    color:var(--gold-dark);text-transform:uppercase;margin-bottom:18px;
-  }
-  .hero h1{font-size:clamp(2.6rem,6vw,4.6rem);font-weight:900;line-height:1.05;color:var(--ink)}
-  .hero h1 .accent{color:var(--rust);display:block}
-  .hero .lead{font-size:1.3rem;margin:24px 0 34px;color:#5a4f48;max-width:520px}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;width:100%}
+  .eyebrow{display:inline-block;letter-spacing:3px;font-size:.85rem;font-weight:700;color:var(--sun-deep);text-transform:uppercase;margin-bottom:18px}
+  .hero h1{font-size:clamp(2.6rem,6vw,4.8rem);font-weight:900;line-height:1.04;color:var(--ink)}
+  .hero h1 .accent{color:var(--sky);display:block}
+  .hero .lead{font-size:1.3rem;margin:24px 0 34px;color:#3c5666;max-width:520px}
   .hero-cta{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
-  .hero-note{font-size:.95rem;color:#8a7d73;margin-top:16px}
+  .hero-note{font-size:.95rem;color:#6d8493;margin-top:16px}
 
-  /* עטיפת הספר (placeholder) */
-  .book-cover{
-    position:relative;aspect-ratio:2/3;border-radius:10px;
-    background:linear-gradient(145deg,#3a2f29,#5a453a);
-    box-shadow:var(--shadow),inset -8px 0 20px rgba(0,0,0,.35);
-    display:flex;flex-direction:column;justify-content:center;align-items:center;
-    padding:40px 28px;text-align:center;transform:rotate(2deg);
-    transition:transform .4s;max-width:340px;margin:0 auto;
+  .cover-stage{display:flex;justify-content:center;align-items:center;position:relative}
+  .cover-glow{position:absolute;width:80%;height:80%;background:radial-gradient(circle,rgba(242,193,78,.45),transparent 65%);filter:blur(30px);z-index:0}
+  .cover-img{
+    position:relative;z-index:1;max-width:360px;width:100%;border-radius:6px;
+    box-shadow:var(--shadow);transform:rotate(2deg);transition:transform .4s;
   }
-  .book-cover:hover{transform:rotate(0) scale(1.02)}
-  .book-cover::before{content:"";position:absolute;inset-inline-start:0;top:0;bottom:0;width:14px;
-    background:linear-gradient(90deg,rgba(0,0,0,.4),transparent);border-radius:10px 0 0 10px}
-  .book-cover .bc-sub{color:var(--gold);letter-spacing:2px;font-size:.8rem;margin-bottom:12px}
-  .book-cover .bc-title{font-family:'Frank Ruhl Libre',serif;color:#fbf8f3;font-size:2rem;font-weight:900;line-height:1.15}
-  .book-cover .bc-author{color:#e8d9c2;margin-top:20px;font-size:1.05rem}
-  .book-cover .bc-ph{position:absolute;bottom:14px;font-size:.7rem;color:rgba(255,255,255,.4)}
+  .cover-img:hover{transform:rotate(0) scale(1.03)}
 
-  /* ===== SECTIONS ===== */
-  section{padding:80px 0}
+  section{padding:84px 0}
   .section-title{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;text-align:center;margin-bottom:16px}
-  .section-sub{text-align:center;color:#7a6e64;font-size:1.15rem;max-width:640px;margin:0 auto 50px}
+  .section-sub{text-align:center;color:#5d7585;font-size:1.15rem;max-width:640px;margin:0 auto 50px}
 
+  /* ABOUT */
   .about{background:var(--cream)}
-  .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center}
-  .about-photo{
-    aspect-ratio:4/5;border-radius:16px;background:linear-gradient(135deg,var(--sky),#4f6d76);
-    box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;
-    color:rgba(255,255,255,.55);font-size:.9rem;text-align:center;padding:20px;
-  }
-  .about-text h2{font-size:2rem;margin-bottom:20px}
-  .about-text p{margin-bottom:16px;color:#5a4f48;font-size:1.1rem}
-  [data-fill]{background:rgba(201,161,90,.12);border-radius:4px;padding:0 4px}
+  .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;align-items:center}
+  .about-photo{aspect-ratio:4/5;border-radius:16px;overflow:hidden;box-shadow:var(--shadow);background:linear-gradient(135deg,var(--sky),var(--ink));display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.6);text-align:center;padding:20px;font-size:.9rem}
+  .about-photo img{width:100%;height:100%;object-fit:cover}
+  .about-text h2{font-size:2rem;margin-bottom:20px;color:var(--ink)}
+  .about-text p{margin-bottom:16px;color:#3c5666;font-size:1.1rem}
+  [data-fill]{background:rgba(242,193,78,.16);border-radius:4px;padding:0 4px}
 
-  /* ציטוט גדול */
-  .quote-band{
-    background:linear-gradient(135deg,var(--ink),#43362e);color:var(--cream);text-align:center;
-  }
-  .quote-band .q{font-family:'Frank Ruhl Libre',serif;font-size:clamp(1.6rem,4vw,2.6rem);
-    font-weight:700;line-height:1.4;max-width:820px;margin:0 auto;font-style:italic}
-  .quote-band .q::before{content:"„";color:var(--gold);font-size:2em;line-height:0;vertical-align:-.35em}
+  /* QUOTE */
+  .quote-band{background:linear-gradient(135deg,var(--ink),#2b5069);color:var(--cream);text-align:center;position:relative;overflow:hidden}
+  .quote-band::after{content:"";position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(242,193,78,.22),transparent 60%);top:-120px;left:50%;transform:translateX(-50%)}
+  .quote-band .q{font-family:'Frank Ruhl Libre',serif;font-size:clamp(1.6rem,4vw,2.5rem);font-weight:700;line-height:1.45;max-width:840px;margin:0 auto;font-style:italic;position:relative;z-index:1}
+  .quote-band .q::before{content:"„";color:var(--sun);font-size:2em;line-height:0;vertical-align:-.35em}
 
-  /* מה בספר */
+  /* CARDS */
   .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-  .card{
-    background:#fff;border-radius:16px;padding:34px 28px;box-shadow:var(--shadow);
-    border-top:4px solid var(--gold);transition:transform .25s;
-  }
+  .card{background:#fff;border-radius:16px;padding:34px 28px;box-shadow:var(--shadow);border-top:4px solid var(--sun);transition:transform .25s}
   .card:hover{transform:translateY(-6px)}
   .card .ic{font-size:2.2rem;margin-bottom:14px}
-  .card h3{font-size:1.25rem;margin-bottom:10px}
-  .card p{color:#6b5f56}
+  .card h3{font-size:1.25rem;margin-bottom:10px;color:var(--ink)}
+  .card p{color:#5a6f7c}
 
-  /* עדויות */
-  .testi{background:var(--sand)}
-  .testi-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
-  .testi-card{background:#fff;border-radius:16px;padding:30px;box-shadow:var(--shadow)}
-  .testi-card .stars{color:var(--gold);margin-bottom:10px;font-size:1.1rem}
-  .testi-card p{font-size:1.1rem;color:#4a4038;margin-bottom:14px}
-  .testi-card .who{font-weight:700;color:var(--rust)}
-
-  /* CTA סופי */
-  .final-cta{
-    background:
-      radial-gradient(800px 400px at 50% 0%, rgba(201,161,90,.2), transparent 70%),
-      linear-gradient(135deg,var(--rust),#6f3826);
-    color:#fff;text-align:center;
-  }
+  /* FINAL CTA */
+  .final-cta{background:radial-gradient(800px 400px at 50% 0%, rgba(242,193,78,.25), transparent 70%),linear-gradient(135deg,var(--sky),var(--ink));color:#fff;text-align:center}
   .final-cta h2{font-size:clamp(2rem,5vw,3rem);margin-bottom:18px}
-  .final-cta p{font-size:1.25rem;margin-bottom:34px;opacity:.95}
-  .price-tag{display:inline-block;background:rgba(255,255,255,.14);backdrop-filter:blur(6px);
-    padding:10px 24px;border-radius:50px;margin-bottom:28px;font-weight:600}
-  .contact-line{margin-top:26px;font-size:1.05rem;opacity:.9}
+  .final-cta p{font-size:1.25rem;margin-bottom:34px;opacity:.96}
+  .price-tag{display:inline-block;background:rgba(255,255,255,.16);backdrop-filter:blur(6px);padding:10px 24px;border-radius:50px;margin-bottom:28px;font-weight:600}
+  .contact-line{margin-top:26px;font-size:1.05rem;opacity:.92}
   .contact-line a{color:#fff;font-weight:700}
 
-  footer{background:var(--ink);color:#b8a89b;text-align:center;padding:40px 24px;font-size:.9rem}
-  footer a{color:var(--gold)}
+  footer{background:var(--ink);color:#a9c1d0;text-align:center;padding:40px 24px;font-size:.9rem}
+  footer a{color:var(--sun)}
 
-  /* כפתור צף */
-  .float-wa{position:fixed;inset-inline-end:20px;bottom:20px;z-index:99;
-    width:60px;height:60px;border-radius:50%;background:var(--wa);
-    display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(37,211,102,.5);
-    animation:pulse 2.5s infinite}
+  .float-wa{position:fixed;inset-inline-end:20px;bottom:20px;z-index:99;width:60px;height:60px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(37,211,102,.5);animation:pulse 2.5s infinite}
   .float-wa svg{width:32px;height:32px;fill:#fff}
   @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
 
-  /* אנימציית כניסה */
   [data-anim]{opacity:0;transform:translateY(30px);transition:opacity .7s,transform .7s}
   [data-anim].in{opacity:1;transform:none}
 
   @media(max-width:820px){
     .hero-grid,.about-grid{grid-template-columns:1fr;gap:36px}
     .hero{min-height:auto;padding:70px 0}
-    .book-cover{order:-1;margin-bottom:10px}
-    .cards,.testi-grid{grid-template-columns:1fr}
+    .cover-stage{order:-1}
+    .cards{grid-template-columns:1fr}
     section{padding:56px 0}
   }
 </style>
 </head>
 <body>
 
-<!-- ===== HERO ===== -->
+<!-- HERO -->
 <header class="hero">
   <div class="wrap hero-grid">
     <div data-anim>
-      <span class="eyebrow">ספר ביכורים · עידו קסלסי</span>
+      <span class="eyebrow">ספר ביכורים · עידו משה קסלסי</span>
       <h1>ריפוי<span class="accent">מתוך כאב</span></h1>
       <p class="lead">סיפורו האמיתי של נער בן 17 שאיבד את מה שנחשב מובן מאליו — ומצא בתוך הכאב את הכוח, הגעגוע והתקווה. ספר שנוגע בלב ומזכיר לנו מה באמת חשוב.</p>
       <div class="hero-cta">
@@ -185,68 +140,52 @@
       </div>
       <p class="hero-note">משלוח עד הבית · או להזמנה טלפונית: <strong>050-9969916</strong></p>
     </div>
-    <div data-anim>
-      <div class="book-cover">
-        <span class="bc-sub">עידו קסלסי</span>
-        <span class="bc-title">ריפוי<br>מתוך כאב</span>
-        <span class="bc-author">ספר ביכורים</span>
-        <span class="bc-ph">[כאן תיכנס תמונת הכריכה]</span>
-      </div>
+    <div class="cover-stage" data-anim>
+      <div class="cover-glow"></div>
+      <img class="cover-img" src="cover.jpg" alt="כריכת הספר ריפוי מתוך כאב מאת עידו משה קסלסי">
     </div>
   </div>
 </header>
 
-<!-- ===== ABOUT AUTHOR ===== -->
+<!-- ABOUT -->
 <section class="about" id="about">
   <div class="wrap about-grid">
-    <div class="about-photo" data-anim>[תמונה של עידו — לבחירה]</div>
+    <div class="about-photo" data-anim>[תמונה של עידו — שלח ואוסיף]</div>
     <div class="about-text" data-anim>
       <h2>הסיפור מאחורי הספר</h2>
-      <p>עידו קסלסי, בן 17 ממעלה אדומים, מתמודד מילדות עם מחלה שמייצרת גידולים על מערכת העצבים. בגיל 12 גידול בחוט השדרה חייב ניתוח דחוף — וממנו יצא עם שיתוק ברגל שמאל.</p>
+      <p>עידו משה קסלסי, בן 17 ממעלה אדומים, מתמודד מילדות עם מחלה שמייצרת גידולים על מערכת העצבים. בגיל 12 גידול בחוט השדרה חייב ניתוח דחוף — וממנו יצא עם שיתוק ברגל שמאל.</p>
       <p>בדצמבר 2023 החיים השתנו שוב: עידו איבד בהדרגה את יכולת הבליעה, הדיבור והשמיעה — אבל לא את התקווה. מתוך ההתמודדות הזו נולד הספר.</p>
       <p>„ריפוי מתוך כאב" הוא מסע כן ואמיץ אל תוך הגעגוע — לגרסה הקודמת של עצמנו, לימים שבהם הכול היה פשוט. עידו כותב על איך הקושי הפיזי משנה גם את הפְּנים, ואיך דווקא הגעגוע יכול לא רק למשוך אחורה, אלא לכוון אותנו קדימה.</p>
     </div>
   </div>
 </section>
 
-<!-- ===== QUOTE ===== -->
+<!-- QUOTE -->
 <section class="quote-band">
   <div class="wrap">
     <p class="q" data-anim>אולי הגעגוע לא רק מושך אותנו אחורה, אלא גם מכוון אותנו קדימה — לזכור מה אנחנו רוצים לשמור בתוכנו לעד.</p>
   </div>
 </section>
 
-<!-- ===== WHAT'S INSIDE ===== -->
+<!-- WHAT'S INSIDE -->
 <section>
   <div class="wrap">
     <h2 class="section-title" data-anim>מה תמצאו בספר</h2>
     <p class="section-sub" data-anim>סיפור אחד — שלושה דברים שתיקחו איתכם</p>
     <div class="cards">
-      <div class="card" data-anim><div class="ic">🕯️</div><h3>סיפור אמיתי</h3><p>מסע חיים כן ואמיץ של נער צעיר, שנכתב מתוך החוויה עצמה — בלי לייפות, בלי להסתיר.</p></div>
-      <div class="card" data-anim><div class="ic">🌱</div><h3>כוח מתוך שבר</h3><p>איך ממשיכים לקוות גם כשהגוף בוגד, ואיך הופכים את הכאב והגעגוע למצפן קדימה.</p></div>
+      <div class="card" data-anim><div class="ic">🕊️</div><h3>סיפור אמיתי</h3><p>מסע חיים כן ואמיץ של נער צעיר, שנכתב מתוך החוויה עצמה — בלי לייפות, בלי להסתיר.</p></div>
+      <div class="card" data-anim><div class="ic">☀️</div><h3>כוח מתוך שבר</h3><p>איך ממשיכים לקוות גם כשהגוף בוגד, ואיך הופכים את הכאב והגעגוע למצפן קדימה.</p></div>
       <div class="card" data-anim><div class="ic">❤️</div><h3>נגיעה ללב</h3><p>ספר שמלווה, מנחם ומזכיר שגם ברגעים הקשים ביותר — התקווה לא נעלמת.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ===== TESTIMONIALS ===== -->
-<section class="testi">
-  <div class="wrap">
-    <h2 class="section-title" data-anim>מה אומרים הקוראים</h2>
-    <p class="section-sub" data-anim>מילים חמות ממי שכבר קרא</p>
-    <div class="testi-grid">
-      <div class="testi-card" data-anim><div class="stars">★★★★★</div><p>„קראתי את הספר — מדהים מאוד, מרגש מאוד ונעים לקרוא אותו. יש הרבה מסרים חיוביים ללמידה. יישר כוח!"</p><span class="who">— קורא/ת [לאימות]</span></div>
-      <div class="testi-card" data-anim><div class="stars">★★★★★</div><p data-fill>„[עדות נוספת — תשלח לי ואוסיף]"</p><span class="who">— [שם]</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== FINAL CTA ===== -->
+<!-- FINAL CTA -->
 <section class="final-cta" id="order">
   <div class="wrap">
-    <div class="price-tag" data-anim data-fill>📖 להזמנה מיידית · משלוח עד הבית</div>
+    <div class="price-tag" data-anim>📖 להזמנה מיידית · משלוח עד הבית</div>
     <h2 data-anim>מוכנים להתחיל את המסע?</h2>
-    <p data-anim data-fill>הזמינו את „ריפוי מתוך כאב" עכשיו — בלחיצה אחת בוואטסאפ.</p>
+    <p data-anim>הזמינו את „ריפוי מתוך כאב" עכשיו — בלחיצה אחת בוואטסאפ.</p>
     <a class="btn" data-anim href="https://wa.me/972509969916?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%96%D7%9E%D7%99%D7%9F%20%D7%90%D7%AA%20%D7%94%D7%A1%D7%A4%D7%A8%20%D7%A8%D7%99%D7%A4%D7%95%D7%99%20%D7%9E%D7%AA%D7%95%D7%9A%20%D7%9B%D7%90%D7%91" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.489-.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
       הזמינו עכשיו
@@ -256,18 +195,16 @@
 </section>
 
 <footer>
-  <p>© <span id="yr"></span> ריפוי מתוך כאב · עידו קסלסי · כל הזכויות שמורות</p>
+  <p>© <span id="yr"></span> ריפוי מתוך כאב · עידו משה קסלסי · כל הזכויות שמורות</p>
   <p style="margin-top:8px">להזמנות: <a href="https://wa.me/972509969916">וואטסאפ 050-9969916</a></p>
 </footer>
 
-<!-- כפתור וואטסאפ צף -->
 <a class="float-wa" href="https://wa.me/972509969916?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%96%D7%9E%D7%99%D7%9F%20%D7%90%D7%AA%20%D7%94%D7%A1%D7%A4%D7%A8" target="_blank" rel="noopener" aria-label="הזמנה בוואטסאפ">
   <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.489-.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
 </a>
 
 <script>
   document.getElementById('yr').textContent=new Date().getFullYear();
-  // אנימציית גלילה
   const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
   document.querySelectorAll('[data-anim]').forEach(el=>io.observe(el));
 </script>
