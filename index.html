@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ריפוי מתוך כאב — עידו קסלסי | הספר</title>
+<meta name="description" content="ריפוי מתוך כאב — ספרו הראשון של עידו קסלסי. סיפור אישי על התמודדות, שיקום ותקווה. להזמנה עכשיו.">
+<!-- Open Graph -->
+<meta property="og:title" content="ריפוי מתוך כאב — עידו קסלסי">
+<meta property="og:description" content="ספר על מסע חיים, כאב שהפך לתקווה. להזמנה עכשיו.">
+<meta property="og:type" content="book">
+<meta property="og:locale" content="he_IL">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&family=Frank+Ruhl+Libre:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#2a2320;         /* חום כהה עמוק */
+    --sand:#f5efe6;        /* חול בהיר */
+    --cream:#fbf8f3;
+    --gold:#c9a15a;        /* זהב חמים */
+    --gold-dark:#a9823f;
+    --rust:#8f4b34;        /* חמרה/כאב */
+    --sky:#6b8a94;         /* תכלת מרגיע/תקווה */
+    --wa:#25D366;
+    --shadow:0 20px 60px rgba(42,35,32,.12);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Assistant',system-ui,sans-serif;
+    color:var(--ink);background:var(--cream);
+    line-height:1.75;overflow-x:hidden;
+  }
+  h1,h2,h3,.serif{font-family:'Frank Ruhl Libre',Georgia,serif}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--wa);color:#fff;font-weight:700;font-size:1.15rem;
+    padding:16px 34px;border-radius:50px;text-decoration:none;
+    box-shadow:0 10px 30px rgba(37,211,102,.35);
+    transition:transform .2s,box-shadow .2s;border:none;cursor:pointer;
+  }
+  .btn:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(37,211,102,.45)}
+  .btn svg{width:24px;height:24px;fill:#fff}
+  .btn-outline{
+    background:transparent;color:var(--ink);border:2px solid var(--gold);
+    box-shadow:none;font-size:1rem;padding:12px 26px;
+  }
+  .btn-outline:hover{background:var(--gold);color:#fff}
+
+  /* ===== HERO ===== */
+  .hero{
+    position:relative;min-height:92vh;display:flex;align-items:center;
+    background:
+      radial-gradient(1200px 600px at 80% -10%, rgba(201,161,90,.18), transparent 60%),
+      radial-gradient(900px 500px at -10% 110%, rgba(107,138,148,.20), transparent 60%),
+      linear-gradient(180deg,var(--sand),var(--cream));
+    overflow:hidden;
+  }
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;width:100%}
+  .eyebrow{
+    display:inline-block;letter-spacing:3px;font-size:.85rem;font-weight:700;
+    color:var(--gold-dark);text-transform:uppercase;margin-bottom:18px;
+  }
+  .hero h1{font-size:clamp(2.6rem,6vw,4.6rem);font-weight:900;line-height:1.05;color:var(--ink)}
+  .hero h1 .accent{color:var(--rust);display:block}
+  .hero .lead{font-size:1.3rem;margin:24px 0 34px;color:#5a4f48;max-width:520px}
+  .hero-cta{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+  .hero-note{font-size:.95rem;color:#8a7d73;margin-top:16px}
+
+  /* עטיפת הספר (placeholder) */
+  .book-cover{
+    position:relative;aspect-ratio:2/3;border-radius:10px;
+    background:linear-gradient(145deg,#3a2f29,#5a453a);
+    box-shadow:var(--shadow),inset -8px 0 20px rgba(0,0,0,.35);
+    display:flex;flex-direction:column;justify-content:center;align-items:center;
+    padding:40px 28px;text-align:center;transform:rotate(2deg);
+    transition:transform .4s;max-width:340px;margin:0 auto;
+  }
+  .book-cover:hover{transform:rotate(0) scale(1.02)}
+  .book-cover::before{content:"";position:absolute;inset-inline-start:0;top:0;bottom:0;width:14px;
+    background:linear-gradient(90deg,rgba(0,0,0,.4),transparent);border-radius:10px 0 0 10px}
+  .book-cover .bc-sub{color:var(--gold);letter-spacing:2px;font-size:.8rem;margin-bottom:12px}
+  .book-cover .bc-title{font-family:'Frank Ruhl Libre',serif;color:#fbf8f3;font-size:2rem;font-weight:900;line-height:1.15}
+  .book-cover .bc-author{color:#e8d9c2;margin-top:20px;font-size:1.05rem}
+  .book-cover .bc-ph{position:absolute;bottom:14px;font-size:.7rem;color:rgba(255,255,255,.4)}
+
+  /* ===== SECTIONS ===== */
+  section{padding:80px 0}
+  .section-title{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;text-align:center;margin-bottom:16px}
+  .section-sub{text-align:center;color:#7a6e64;font-size:1.15rem;max-width:640px;margin:0 auto 50px}
+
+  .about{background:var(--cream)}
+  .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center}
+  .about-photo{
+    aspect-ratio:4/5;border-radius:16px;background:linear-gradient(135deg,var(--sky),#4f6d76);
+    box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;
+    color:rgba(255,255,255,.55);font-size:.9rem;text-align:center;padding:20px;
+  }
+  .about-text h2{font-size:2rem;margin-bottom:20px}
+  .about-text p{margin-bottom:16px;color:#5a4f48;font-size:1.1rem}
+  [data-fill]{background:rgba(201,161,90,.12);border-radius:4px;padding:0 4px}
+
+  /* ציטוט גדול */
+  .quote-band{
+    background:linear-gradient(135deg,var(--ink),#43362e);color:var(--cream);text-align:center;
+  }
+  .quote-band .q{font-family:'Frank Ruhl Libre',serif;font-size:clamp(1.6rem,4vw,2.6rem);
+    font-weight:700;line-height:1.4;max-width:820px;margin:0 auto;font-style:italic}
+  .quote-band .q::before{content:"„";color:var(--gold);font-size:2em;line-height:0;vertical-align:-.35em}
+
+  /* מה בספר */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .card{
+    background:#fff;border-radius:16px;padding:34px 28px;box-shadow:var(--shadow);
+    border-top:4px solid var(--gold);transition:transform .25s;
+  }
+  .card:hover{transform:translateY(-6px)}
+  .card .ic{font-size:2.2rem;margin-bottom:14px}
+  .card h3{font-size:1.25rem;margin-bottom:10px}
+  .card p{color:#6b5f56}
+
+  /* עדויות */
+  .testi{background:var(--sand)}
+  .testi-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+  .testi-card{background:#fff;border-radius:16px;padding:30px;box-shadow:var(--shadow)}
+  .testi-card .stars{color:var(--gold);margin-bottom:10px;font-size:1.1rem}
+  .testi-card p{font-size:1.1rem;color:#4a4038;margin-bottom:14px}
+  .testi-card .who{font-weight:700;color:var(--rust)}
+
+  /* CTA סופי */
+  .final-cta{
+    background:
+      radial-gradient(800px 400px at 50% 0%, rgba(201,161,90,.2), transparent 70%),
+      linear-gradient(135deg,var(--rust),#6f3826);
+    color:#fff;text-align:center;
+  }
+  .final-cta h2{font-size:clamp(2rem,5vw,3rem);margin-bottom:18px}
+  .final-cta p{font-size:1.25rem;margin-bottom:34px;opacity:.95}
+  .price-tag{display:inline-block;background:rgba(255,255,255,.14);backdrop-filter:blur(6px);
+    padding:10px 24px;border-radius:50px;margin-bottom:28px;font-weight:600}
+  .contact-line{margin-top:26px;font-size:1.05rem;opacity:.9}
+  .contact-line a{color:#fff;font-weight:700}
+
+  footer{background:var(--ink);color:#b8a89b;text-align:center;padding:40px 24px;font-size:.9rem}
+  footer a{color:var(--gold)}
+
+  /* כפתור צף */
+  .float-wa{position:fixed;inset-inline-end:20px;bottom:20px;z-index:99;
+    width:60px;height:60px;border-radius:50%;background:var(--wa);
+    display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(37,211,102,.5);
+    animation:pulse 2.5s infinite}
+  .float-wa svg{width:32px;height:32px;fill:#fff}
+  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+
+  /* אנימציית כניסה */
+  [data-anim]{opacity:0;transform:translateY(30px);transition:opacity .7s,transform .7s}
+  [data-anim].in{opacity:1;transform:none}
+
+  @media(max-width:820px){
+    .hero-grid,.about-grid{grid-template-columns:1fr;gap:36px}
+    .hero{min-height:auto;padding:70px 0}
+    .book-cover{order:-1;margin-bottom:10px}
+    .cards,.testi-grid{grid-template-columns:1fr}
+    section{padding:56px 0}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div data-anim>
+      <span class="eyebrow">ספר ביכורים · עידו קסלסי</span>
+      <h1>ריפוי<span class="accent">מתוך כאב</span></h1>
+      <p class="lead" data-fill>סיפור אישי ומרגש על מסע חיים — על נפילות, על הכוח לקום מחדש, ועל התקווה שנולדת דווקא מתוך השבר. <em>[טקסט לעדכון כשיגיעו החומרים]</em></p>
+      <div class="hero-cta">
+        <a class="btn" href="https://wa.me/972509969916?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%96%D7%9E%D7%99%D7%9F%20%D7%90%D7%AA%20%D7%94%D7%A1%D7%A4%D7%A8%20%D7%A8%D7%99%D7%A4%D7%95%D7%99%20%D7%9E%D7%AA%D7%95%D7%9A%20%D7%9B%D7%90%D7%91" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.489-.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          הזמינו עכשיו בוואטסאפ
+        </a>
+        <a class="btn btn-outline" href="#about">קראו עוד ↓</a>
+      </div>
+      <p class="hero-note">משלוח עד הבית · או להזמנה טלפונית: <strong>050-9969916</strong></p>
+    </div>
+    <div data-anim>
+      <div class="book-cover">
+        <span class="bc-sub">עידו קסלסי</span>
+        <span class="bc-title">ריפוי<br>מתוך כאב</span>
+        <span class="bc-author">ספר ביכורים</span>
+        <span class="bc-ph">[כאן תיכנס תמונת הכריכה]</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== ABOUT AUTHOR ===== -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-photo" data-anim>[תמונה של עידו]</div>
+    <div class="about-text" data-anim>
+      <h2>הסיפור מאחורי הספר</h2>
+      <p data-fill>עידו קסלסי משתף בספרו הראשון את מסע חייו — סיפור של התמודדות, שבר וריפוי. <em>[הביוגרפיה המלאה תיכנס כאן כשתגיע]</em></p>
+      <p data-fill>הספר הושק באירוע מרגש במרכז התרבות דה וינצ'י בתל אביב, ומאז נוגע בלבבות של קוראים רבים. <em>[לעדכון]</em></p>
+      <p data-fill><em>[קטע נוסף על המסר של הספר, למי הוא מיועד, ומה הקורא ייקח ממנו]</em></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== QUOTE ===== -->
+<section class="quote-band">
+  <div class="wrap">
+    <p class="q" data-anim data-fill>הריפוי הוא לא להפוך לאדם שאין בו חושך — הריפוי הוא להפסיק לפחד מהחושך.</p>
+  </div>
+</section>
+
+<!-- ===== WHAT'S INSIDE ===== -->
+<section>
+  <div class="wrap">
+    <h2 class="section-title" data-anim>מה תמצאו בספר</h2>
+    <p class="section-sub" data-anim data-fill>[שלושת הערכים המרכזיים של הספר — לעדכון לפי התוכן]</p>
+    <div class="cards">
+      <div class="card" data-anim><div class="ic">🕯️</div><h3>סיפור אמיתי</h3><p data-fill>מסע חיים אישי, כן ובלי כחל ושרק, שנכתב מתוך החוויה עצמה.</p></div>
+      <div class="card" data-anim><div class="ic">🌱</div><h3>דרך לריפוי</h3><p data-fill>תובנות וכלים שעזרו למחבר להפוך את הכאב לצמיחה ותקווה.</p></div>
+      <div class="card" data-anim><div class="ic">❤️</div><h3>נגיעה ללב</h3><p data-fill>ספר שמלווה אתכם, מנחם, ומזכיר שאתם לא לבד במסע.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testi">
+  <div class="wrap">
+    <h2 class="section-title" data-anim>מה אומרים הקוראים</h2>
+    <p class="section-sub" data-anim>[עדויות אמיתיות — יוכנסו כשתשלח לי]</p>
+    <div class="testi-grid">
+      <div class="testi-card" data-anim><div class="stars">★★★★★</div><p data-fill>„קראתי את הספר — מדהים מאוד, מרגש מאוד ונעים לקרוא. יש הרבה מסרים חיוביים ללמידה."</p><span class="who">— קורא/ת [לאימות]</span></div>
+      <div class="testi-card" data-anim><div class="stars">★★★★★</div><p data-fill>„[עדות נוספת תיכנס כאן]"</p><span class="who">— [שם]</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="final-cta" id="order">
+  <div class="wrap">
+    <div class="price-tag" data-anim data-fill>📖 להזמנה מיידית · משלוח עד הבית</div>
+    <h2 data-anim>מוכנים להתחיל את המסע?</h2>
+    <p data-anim data-fill>הזמינו את „ריפוי מתוך כאב" עכשיו — בלחיצה אחת בוואטסאפ.</p>
+    <a class="btn" data-anim href="https://wa.me/972509969916?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%96%D7%9E%D7%99%D7%9F%20%D7%90%D7%AA%20%D7%94%D7%A1%D7%A4%D7%A8%20%D7%A8%D7%99%D7%A4%D7%95%D7%99%20%D7%9E%D7%AA%D7%95%D7%9A%20%D7%9B%D7%90%D7%91" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.489-.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+      הזמינו עכשיו
+    </a>
+    <p class="contact-line" data-anim>או בטלפון: <a href="tel:0509969916">050-9969916</a> · הודעה פרטית באינסטגרם <a href="https://instagram.com/ripuy_mitoch" target="_blank" rel="noopener">@ripuy_mitoch</a></p>
+  </div>
+</section>
+
+<footer>
+  <p>© <span id="yr"></span> ריפוי מתוך כאב · עידו קסלסי · כל הזכויות שמורות</p>
+  <p style="margin-top:8px">להזמנות: <a href="https://wa.me/972509969916">וואטסאפ 050-9969916</a></p>
+</footer>
+
+<!-- כפתור וואטסאפ צף -->
+<a class="float-wa" href="https://wa.me/972509969916?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%96%D7%9E%D7%99%D7%9F%20%D7%90%D7%AA%20%D7%94%D7%A1%D7%A4%D7%A8" target="_blank" rel="noopener" aria-label="הזמנה בוואטסאפ">
+  <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.489-.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+<script>
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  // אנימציית גלילה
+  const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+  document.querySelectorAll('[data-anim]').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
